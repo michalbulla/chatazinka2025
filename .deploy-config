@@ -1,6 +1,6 @@
 CRAFT_VERSION=craft5
-SITE_NAME=horskavilenka
+SITE_NAME=chatazinka
 BETA_SERVER=server2025.embis.sk
-BETA_DOMAIN=horskavilenka.dev2025.embis.sk
+BETA_DOMAIN=chatazinka.dev2025.embis.sk
 LIVE_SERVER=server2025.embis.sk
-LIVE_DOMAIN=horskavilenka.sk
+LIVE_DOMAIN=chatazinka.sk
