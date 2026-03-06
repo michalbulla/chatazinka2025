@@ -13,7 +13,7 @@
           {% cache %}
               <div class="lg:container px-4">
               {% if entry.buttons|length %}
-                <div class="buttons md:grid md:grid-cols-3 md:gap-4 mb-16">
+                <div class="buttons md:grid md:grid-cols-2 md:gap-4 mb-16">
                   {% for button in entry.buttons.all %}
                     <a class="button md:col-span-1 mb-8 block mx-auto md:mx-0 bg-black/80 lg:bg-transparent md:mb-0 relative group" href="{{ button.buttonLink }}">
                       <img class="" src="{{ button.obrazok.one.url('medium') }}" alt="">
@@ -24,10 +24,6 @@
                     </a>
                   {% endfor %}
                 </div>
-                <div class="video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/uEXmyEQnbVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <br/><br/>
                 
               {% endif %}
               <h1 class="main-heading">{{ pageHeading }}</h1>

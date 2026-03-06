@@ -1,9 +1,9 @@
-<header class="h-[400px] md:h-[500px] relative mb-12">
+<header class="h-[400px] md:h-[500px] lg:h-[650px] relative mb-12">
   <div class="absolute left-0 top-0 w-full z-10">
     <div class="bg-black bg-opacity-75 py-2">
       <div class="lg:container px-4">
         <div class="flex items-center justify-between p-2 lg:p-4">
-          <div class="logo"><a href="/" title="Back to Home Page"><img class="w-[250px]" src="/img/logo-main.png" alt="{{ siteName }}" /></a></div>
+          <div class="logo"><a href="/" title="Back to Home Page"><img class="w-[300px]" src="/img/logo-main.png" alt="{{ siteName }}" /></a></div>
           {% include '_partials/nav/top' %}
           <button type="button" aria-label="Main Navigation Toggle" title="Main Navigation Toggle" aria-haspopup="true" aria-controls="main-nav" aria-expanded="false" class="main-nav-toggle lg:hidden" id="main-nav-toggle">
             {{ svg("@webroot/img/icons/bars-solid.svg")|attr({class: 'h-8 w-8 inline-block text-white'}) }}

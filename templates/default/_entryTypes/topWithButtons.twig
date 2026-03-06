@@ -12,13 +12,8 @@
         {% block mainContent %}
           {% cache %}
             {% if entry.buttons|length %}
-              <h1 class="main-heading">{{ pageHeading }}</h1>
-
-              <div class="default-content">
-                {% include '_partials/contentBuilder' with {contentField: entry.mainContent, blocksDir: 'mainContent'} %}
-              </div>
-              
-              <div class="buttons md:grid md:grid-cols-3 md:gap-4 mb-16">
+             
+              <div class="buttons md:grid md:grid-cols-2 md:gap-4 mb-16">
                 {% for button in entry.buttons.all %}
                   <a class="button md:col-span-1 mb-4 md:mb-0 relative group" href="{{ button.buttonLink }}">
                     <img class="" src="{{ button.obrazok.one.url('medium') }}" alt="">
@@ -29,6 +24,12 @@
                   </a>
                 {% endfor %}
               </div>
+
+              <h1 class="main-heading">{{ pageHeading }}</h1>
+
+              <div class="default-content">
+                {% include '_partials/contentBuilder' with {contentField: entry.mainContent, blocksDir: 'mainContent'} %}
+              </div>
             {% endif %}
           {% endcache %}
         {% endblock %}
@@ -36,3 +37,8 @@
     {% endblock %}
   {% endembed %}
 {% endblock %}
+
+{# Fancybox js and css code #}
+{% css "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" %}
+{% js "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" %}
+
